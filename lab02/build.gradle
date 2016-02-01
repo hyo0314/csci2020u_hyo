@@ -1,22 +1,22 @@
 apply plugin: 'java'
 
-sourceCompatibility = 1.5
-version = '1.0'
-
-jar {
-    manifest {
-        attributes	'Main-Class': 'SimpleTest',
-        			'Implementation-Title': 'SimpleTest',
-        			'Implementation-Version': version
-    }
+sourceCompatibility = 1.7
+version = '1.0.1'
+jar
+{
+	manifest{
+		attributes	'Main-Class': 'lab02.SimpleTest',
+					'Implementation-Title': 'Simple-Test',
+					'Implementation-Version' : version
+	}
 }
 
-repositories {
-	mavenCentral()
+repositories{
+  mavenCentral()
 }
 
-dependencies {
-	compile group: 'commons-validator',
-					name: 'commons-validator',
-					version: '1.4.1'
+dependencies{
+  compile group: 'org.apache.commons',
+    name: 'commons-csv',
+    version: '1.2'
 }

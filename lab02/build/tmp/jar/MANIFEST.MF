@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: lab02.SimpleTest
+Implementation-Title: Simple-Test
+Implementation-Version: 1.0.1
+
